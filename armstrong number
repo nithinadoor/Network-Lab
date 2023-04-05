@@ -1,0 +1,23 @@
+#Shell script to check whether a given number is Armstrong or not
+
+#! /bin/bash
+
+read -p"enter a number :" num
+x=$num
+sum=0
+r=0
+n=0
+
+while (($x > 0))
+do
+r=$(( x % 10 ))
+n=$(( r**3 ))
+sum=$(( sum + n ))
+x=$(( x / 10 ))
+done
+if(( $sum == $num ))
+then
+echo "It is an armstrong number."
+else
+echo "It is not an armstrong number."
+fi
