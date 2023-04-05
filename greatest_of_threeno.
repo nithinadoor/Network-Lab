@@ -1,0 +1,17 @@
+#shell script to find the greatest of three numbers
+
+#! /bin/bash
+
+read -p"enter first number" num1
+read -p"enter first number" num2
+read -p"enter first number" num3	
+
+if (($num1 > $num2  &&  $num1 > $num3 ))
+then 
+echo greatest number is $num1
+elif (( $num2 > $num1  &&  $num2 > $num3 ))
+then
+echo greatest number is $num2
+else
+echo greatest number is $num3
+fi
