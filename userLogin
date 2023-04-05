@@ -1,0 +1,13 @@
+#Shell Script User Login with Password
+
+#! /bin/bash
+
+read -p "enter username" user
+read -sp "enter password" pass
+
+if (( $user=="admin" && $pass=="123"))
+then
+echo -e "\nlogin sucessfully\n"
+else
+echo -e "\nlogin error\n"
+fi
